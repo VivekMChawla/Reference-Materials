@@ -1,0 +1,140 @@
+Flashcard Scratchpad
+
+◊ 
+--------------------------------------------------------------------
+The "for" attribute.
+
+DESCRIPTION:
+
+◊ 
+
+--------------------------------------------------------------------
+
+<messaging:emailTemplate>
+
+Defines a Visualforce email template. 
+
+◊ All email template tags must be wrapped inside a single emailTemplate component tag. 
+
+◊ emailTemplate must contain either an htmlEmailBody tag or a plainTextEmailBody tag. 
+
+◊ The detail and form components are not permitted as child nodes. 
+
+◊ This component can only be used within a Visualforce email template. 
+
+◊ Email templates can be created and managed through Setup | Communication Templates | Email Templates.
+
+
+
+--------------------------------------------------------------------
+Must be children of <apex:form>
+	<apex:actionFunction>
+	<apex:commandButton>
+	<apex:commandLink>
+
+Must be a child of <apex:dataTable>
+	<apex:column>
+
+Must be a child of <apex:pageBlockTable>
+	<apex:column>
+
+Must be child of <apex:chart>
+	<apex:areaSeries>
+	<apex:axis>
+	<apex:barSeries>
+	<apex:gaugeSeries>
+	<apex:legend>
+	<apex:lineSeries>
+	<apex:pieSeries>
+	<apex:radarSeries>
+	<apex:scatterSeries>
+
+Must be child of <apex:axis>, or any data series component	
+	<apex:chartLabel>
+
+Must be child of apex data series components
+	<apex:chartTips>
+
+Must be child of <apex:component>
+	<apex:attribute>
+	<apex:componentBody>
+
+
+Important Visualforce component attributes
+	rendered
+	id
+	templateb
+	var
+	value
+	style
+	styleClass
+
+
+Note that you cannot define attributes with names like id or rendered. These attributes are automatically created for all custom component definitions.
+
+
+TODO: Make flashcards for all the attributes of <apex:page>
+TODO: Compare <apex:pageMessages> and <apex:Messages>.  Create flashcards that test the difference.
+
+<apex:outputPanel>
+layout	
+	String	
+		The layout style for the panel. Possible values include "block" (which generates an HTML div tag), "inline" (which generates an HTML span tag), and "none" (which does not generate an HTML tag). If not specified, this value defaults to "none". However, if layout is set to "none", for each child element with the rendered attribute set to "false", the outputPanel generates a span tag, with the ID of each child, and a style attribute set to "display:none". Thus, while the content is not visible, JavaScript can still access the elements through the DOM ID.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
